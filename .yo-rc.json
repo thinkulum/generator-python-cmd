@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Andy Culbertson",
+      "authorEmail": "thinkulum@gmail.com",
+      "authorUrl": "http://www.thinkulum.net/"
+    }
+  }
+}
