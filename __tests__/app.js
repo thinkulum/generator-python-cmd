@@ -11,7 +11,7 @@ describe('generator-python-cmd:app', () => {
 
   it('creates files', () => {
     assert.file([
-      'dummyfile.txt'
+      'README.md'
     ]);
   });
 });
