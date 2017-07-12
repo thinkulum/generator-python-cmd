@@ -1,3 +1,6 @@
+/* eslint capitalized-comments: ["off"],
+          comma-dangle: ["off"] */
+
 'use strict';
 const Generator = require('yeoman-generator');
 const chalk = require('chalk');
@@ -24,19 +27,19 @@ module.exports = class extends Generator {
     });
   }
 
-
-  // Adapted from 
+  // Adapted from
   // https://github.com/yeoman/generator-webapp/blob/master/app/index.js
   writing() {
     this._writingGit();
     this._writingScript();
-    this._writingConfig();
     this._writingLib();
+    // The docs directories have to be created
+    // before the config directory or the test fails.
     this._writingDocs();
+    this._writingConfig();
     this._writingTests();
     this._writingSetup();
   }
-
 
   _writingGit() {
     this.fs.copy(
@@ -44,36 +47,31 @@ module.exports = class extends Generator {
       this.destinationPath('.gitignore'));
   }
 
-
   _writingScript() {
     const templatePaths = ['app.py'];
     const options = {};
     this._copyTpls(templatePaths, options);
   }
 
-
-  _writingConfig() {
-    const dirPaths = ['config'];
-    this._makeDirs(dirPaths);
-  }
-
-
   _writingLib() {
     const templatePaths = [
       'package/cli.py',
       'package/config.py',
       'package/controller.py',
-      'package/__init__.py'
+      'package/__init__.py',
     ];
     const options = {};
     this._copyTpls(templatePaths, options);
   }
 
-
   _writingDocs() {
+    // Create the parent directory first or the
+    // child directories won't be created till
+    // after the test.
     const dirPaths = [
+      'docs/source',
       'docs/source/_static',
-      'docs/source/_templates'
+      'docs/source/_templates',
     ];
     this._makeDirs(dirPaths);
 
@@ -89,16 +87,19 @@ module.exports = class extends Generator {
     this._copyTpls(templatePaths, options);
   }
 
+  _writingConfig() {
+    const dirPaths = ['config'];
+    this._makeDirs(dirPaths);
+  }
 
   _writingTests() {
     const templatePaths = [
       'tests/context.py',
-      'tests/test.py'
+      'tests/test.py',
     ];
     const options = {};
     this._copyTpls(templatePaths, options);
   }
-
 
   _writingSetup() {
     const templatePaths = ['setup.py'];
@@ -106,12 +107,10 @@ module.exports = class extends Generator {
     this._copyTpls(templatePaths, options);
   }
 
-
   _copyTpls(templatePaths = [], options = {}) {
     var i;
-    var templatePath;
     for (i = 0; i < templatePaths.length; i++) {
-      templatePath = templatePaths[i];
+      var templatePath = templatePaths[i];
       this.fs.copyTpl(
         this.templatePath(templatePath),
         this.destinationPath(templatePath),
@@ -120,16 +119,17 @@ module.exports = class extends Generator {
     }
   }
 
-
   _makeDirs(dirPaths = []) {
     var i;
-    var dirPath;
     for (i = 0; i < dirPaths.length; i++) {
-      dirPath = dirPaths[i];
-      mkdirp(dirPath);
+      var dirPath = this.destinationPath(dirPaths[i]);
+      mkdirp(dirPath, function (err) {
+        if (err) {
+          console.error(err);
+        }
+      });
     }
   }
-
 
   install() {
     this.installDependencies();
