@@ -5,6 +5,7 @@
 var path = require('path');
 var assert = require('yeoman-assert');
 var helpers = require('yeoman-test');
+var fs = require('fs');
 
 describe('generator-python-cmd:app', () => {
   beforeAll(() => {
@@ -36,12 +37,41 @@ describe('generator-python-cmd:app', () => {
     'docs/source/_templates',
   ];
 
+  const contentFilePaths = expectedFilePaths.map(
+    function (expectedFilePath) {
+      return path.join(
+        __dirname,
+        'data',
+        expectedFilePath.replace(
+          /^\./, ''));
+    }
+  );
+
   it('creates expected files', () => {
     assert.file(expectedFilePaths);
   });
 
   it('creates expected empty directories', () => {
     assert.file(expectedEmptyDirPaths);
+  });
+
+  it('creates expected file content', () => {
+    var fileContentItems = [];
+    var i;
+    for (i = 0; i < expectedFilePaths.length; i++) {
+      const contentFilePath = contentFilePaths[i];
+      const expectedContent = fs.readFileSync(
+        contentFilePath, 'utf8', (err, data) => {
+          if (err) {
+            throw err;
+          }
+        });
+
+      fileContentItems.push(
+        [contentFilePath, expectedContent]);
+    }
+
+    assert.fileContent(fileContentItems);
   });
 });
 
