@@ -37,16 +37,6 @@ describe('generator-python-cmd:app', () => {
     'docs/source/_templates',
   ];
 
-  const contentFilePaths = expectedFilePaths.map(
-    function (expectedFilePath) {
-      return path.join(
-        __dirname,
-        'data',
-        expectedFilePath.replace(
-          /^\./, ''));
-    }
-  );
-
   it('creates expected files', () => {
     assert.file(expectedFilePaths);
   });
@@ -59,7 +49,12 @@ describe('generator-python-cmd:app', () => {
     var fileContentItems = [];
     var i;
     for (i = 0; i < expectedFilePaths.length; i++) {
-      const contentFilePath = contentFilePaths[i];
+      const expectedFilePath = expectedFilePaths[i];
+      const contentFilePath = path.join(
+        __dirname,
+        'data',
+        expectedFilePath.replace(
+          /^\./, ''));
       const expectedContent = fs.readFileSync(
         contentFilePath, 'utf8', (err, data) => {
           if (err) {
@@ -69,7 +64,7 @@ describe('generator-python-cmd:app', () => {
         });
 
       fileContentItems.push(
-        [contentFilePath, expectedContent]);
+        [expectedFilePath, expectedContent]);
     }
 
     assert.fileContent(fileContentItems);
