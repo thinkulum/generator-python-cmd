@@ -65,6 +65,7 @@ describe('generator-python-cmd:app', () => {
           if (err) {
             throw err;
           }
+          return data;
         });
 
       fileContentItems.push(

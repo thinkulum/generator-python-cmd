@@ -32,11 +32,9 @@ module.exports = class extends Generator {
   writing() {
     this._writingGit();
     this._writingScript();
-    this._writingLib();
-    // The docs directories have to be created
-    // before the config directory or the test fails.
-    this._writingDocs();
     this._writingConfig();
+    this._writingLib();
+    this._writingDocs();
     this._writingTests();
     this._writingSetup();
   }
@@ -53,6 +51,11 @@ module.exports = class extends Generator {
     this._copyTpls(templatePaths, options);
   }
 
+  _writingConfig() {
+    const dirPaths = ['config'];
+    this._makeDirs(dirPaths);
+  }
+
   _writingLib() {
     const templatePaths = [
       'package/cli.py',
@@ -65,11 +68,7 @@ module.exports = class extends Generator {
   }
 
   _writingDocs() {
-    // Create the parent directory first or the
-    // child directories won't be created till
-    // after the test.
     const dirPaths = [
-      'docs/source',
       'docs/source/_static',
       'docs/source/_templates',
     ];
@@ -85,11 +84,6 @@ module.exports = class extends Generator {
     ];
     const options = {};
     this._copyTpls(templatePaths, options);
-  }
-
-  _writingConfig() {
-    const dirPaths = ['config'];
-    this._makeDirs(dirPaths);
   }
 
   _writingTests() {
@@ -123,7 +117,7 @@ module.exports = class extends Generator {
     var i;
     for (i = 0; i < dirPaths.length; i++) {
       var dirPath = this.destinationPath(dirPaths[i]);
-      mkdirp(dirPath, function (err) {
+      mkdirp.sync(dirPath, function (err) {
         if (err) {
           console.error(err);
         }
