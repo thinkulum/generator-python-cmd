@@ -6,7 +6,7 @@
  *
  * @author Andy Culbertson
  *
- * @requires NPM:Generator
+ * @requires NPM:yeoman-generator
  * @requires NPM:chalk
  * @requires NPM:yosay
  * @requires NPM:mkdirp

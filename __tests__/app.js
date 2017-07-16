@@ -7,8 +7,8 @@
  * @author Andy Culbertson
  *
  * @requires NPM:path
- * @requires NPM:assert
- * @requires NPM:helpers
+ * @requires NPM:yeoman-assert
+ * @requires NPM:yeoman-test
  * @requires NPM:fs
  */
 
