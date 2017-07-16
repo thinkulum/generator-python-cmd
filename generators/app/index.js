@@ -1,6 +1,17 @@
 /* eslint capitalized-comments: ["off"],
           comma-dangle: ["off"] */
 
+/**
+ * @fileOverview The main code for this generator.
+ *
+ * @author Andy Culbertson
+ *
+ * @requires NPM:Generator
+ * @requires NPM:chalk
+ * @requires NPM:yosay
+ * @requires NPM:mkdirp
+ */
+
 'use strict';
 const Generator = require('yeoman-generator');
 const chalk = require('chalk');
