@@ -80,7 +80,11 @@ var difference = function (setA, setB) {
 describe('generator-python-cmd:app', () => {
   beforeAll(() => {
     return helpers.run(path.join(__dirname, '../generators/app'))
-      .withPrompts({someAnswer: true});
+      .withPrompts({projectName: 'Cookie Factory',
+        packageName: 'cookiefactory',
+        projectDesc: 'A project for managing my coding projects',
+        author: 'Andy Culbertson',
+        authorEmail: 'thinkulum@gmail.com'});
   });
 
   const expectedFilePaths = [

@@ -1,7 +1,7 @@
-import cookiefactory
+import <%= packageName %>
 
 def main():
-    cli = cookiefactory.cli.CLI()
+    cli = <%= packageName %>.cli.CLI()
     cli.cmdloop()
 
 

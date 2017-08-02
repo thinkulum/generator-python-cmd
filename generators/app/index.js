@@ -26,11 +26,37 @@ module.exports = class extends Generator {
     ));
 
     const prompts = [{
-      type: 'confirm',
-      name: 'someAnswer',
-      message: 'Would you like to enable this option?',
-      default: true
-    }];
+      type: 'input',
+      name: 'projectName',
+      message: 'What is the project name?',
+    },
+    {
+      type: 'input',
+      name: 'projectSlug',
+      message: 'What is the project slug?',
+      default: this.appname,
+    },
+    {
+      type: 'input',
+      name: 'packageName',
+      message: 'What is the package name?',
+    },
+    {
+      type: 'input',
+      name: 'projectDesc',
+      message: 'What is the project description?',
+    },
+    {
+      type: 'input',
+      name: 'author',
+      message: 'What is the author\'s name?',
+    },
+    {
+      type: 'input',
+      name: 'authorEmail',
+      message: 'What is the author\'s email address?',
+    },
+    ];
 
     return this.prompt(prompts).then(props => {
       // To access props later use this.props.someAnswer;
@@ -58,7 +84,7 @@ module.exports = class extends Generator {
 
   _writingScript() {
     const templatePaths = ['app.py'];
-    const options = {};
+    const options = {packageName: this.props.packageName};
     this._copyTpls(templatePaths, options);
   }
 
@@ -102,13 +128,17 @@ module.exports = class extends Generator {
       'tests/context.py',
       'tests/test.py',
     ];
-    const options = {};
+    const options = {packageName: this.props.packageName};
     this._copyTpls(templatePaths, options);
   }
 
   _writingSetup() {
     const templatePaths = ['setup.py'];
-    const options = {};
+    const options = {packageName: this.props.packageName,
+      projectName: this.props.projectName,
+      projectDesc: this.props.projectDesc,
+      author: this.props.author,
+      authorEmail: this.props.authorEmail};
     this._copyTpls(templatePaths, options);
   }
 

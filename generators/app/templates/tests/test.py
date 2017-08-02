@@ -1,5 +1,5 @@
 import unittest
-from context import cookiefactory
+from context import <%= packageName %>
 
 class TestCLI(unittest.TestCase):
     """
@@ -7,7 +7,7 @@ class TestCLI(unittest.TestCase):
     """
 
     def test_quit(self):
-        cli = cookiefactory.cli.CLI()
+        cli = <%= packageName %>.cli.CLI()
         cli.onecmd('q')
 
 
@@ -18,7 +18,7 @@ class TestMetadata(unittest.TestCase):
     """
 
     def test_version_number(self):
-        cookiefactory.__version__ == '0.0.1'
+        <%= packageName %>.__version__ == '0.0.1'
 
 
 
