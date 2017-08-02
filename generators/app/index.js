@@ -119,7 +119,9 @@ module.exports = class extends Generator {
       'docs/source/conf.py',
       'docs/source/index.rst'
     ];
-    const options = {};
+    const options = {projectName: this.props.projectName,
+      author: this.props.author,
+      authorEmail: this.props.authorEmail};
     this._copyTpls(templatePaths, options);
   }
 

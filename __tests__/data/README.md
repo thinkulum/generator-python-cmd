@@ -1,4 +1,4 @@
-# Code Console
+# Cookie Factory
 
 ## Table of contents
 
@@ -17,17 +17,13 @@
 <a id="synopsis"></a>
 ## Synopsis
 
-This app manages my coding projects.
-
 <a id="prerequisites"></a>
 ## Prerequisites
 
-You'll need to have Python 3 installed. I'm using Python 3.5.2 to develop the app. The rest of the requirements should be handled by the installation script.
+You'll need to have Python 3 installed. The rest of the requirements should be handled by the installation script.
 
 <a id="downloading"></a>
 ## Downloading
-
-This is a local app, so there's nowhere to download it at this time.
 
 <a id="installation"></a>
 ## Installing
@@ -51,9 +47,7 @@ For variations on this command to fit your circumstances, see https://docs.pytho
 <a id="documentation"></a>
 ## Documentation
 
-The user documentation is in this `README` file under the [Usage](#usage) heading.
-
-The developer documentation is in `docs/source/index.rst`. To create a more readable version, from a command prompt in the `docs` directory run the command `make html`. The start page for that documentation will be `docs/build/html/index.html`.
+The documentation is in `docs/source/index.rst`. To create a more readable version, from a command prompt in the `docs` directory run the command `make html`. The start page for that documentation will be `docs/build/html/index.html`.
 
 <a id="usage"></a>
 ## Usage
@@ -79,12 +73,10 @@ To quit the app, use the command `q`.
 <a id="contributing"></a>
 ## Contributing
 
-Since I'm the only author and this project isn't public, there's no way to contribute at this time.
-
 <a id="testing"></a>
 ## Testing
 
-Run `run_tests.py` to automatically run all the tests. This is just the `node2` script renamed to avoid import conflicts.
+From a command prompt in the project directory, run the command `nose2` to automatically run all the tests.
 
 <a id="changelog"></a>
 ## Changelog
