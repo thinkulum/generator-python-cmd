@@ -144,7 +144,7 @@ module.exports = class extends Generator {
     this._copyTpls(templatePaths, options);
   }
 
-  _copyTpls(templatePaths = [], options = {}) {
+  _copyTpls(templatePaths, options) {
     var i;
     for (i = 0; i < templatePaths.length; i++) {
       var templatePath = templatePaths[i];
@@ -156,7 +156,7 @@ module.exports = class extends Generator {
     }
   }
 
-  _makeDirs(dirPaths = []) {
+  _makeDirs(dirPaths) {
     var i;
     for (i = 0; i < dirPaths.length; i++) {
       var dirPath = this.destinationPath(dirPaths[i]);
