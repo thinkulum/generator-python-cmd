@@ -1,0 +1,14 @@
+Description:
+    Creates a basic command-driven Python app using the cmd library.
+
+Example:
+    yo python-cmd
+
+    This will create:
+        README.md: Basic information for installing, using, and contributing to the project.
+        setup.py: The script for optionally installing your application's package as a library.
+        app.py: The script for running your application.
+        <package>/: Package files for your application.
+        config/: Configuration files for your application.
+        tests/: Unit tests for your application.
+        docs/source/: Documentation for your application.
