@@ -63,6 +63,7 @@ The generator creates
 
 The generator puts all of that into the following folder structure:
 
+```
 .
 |____config
 |____docs
@@ -79,6 +80,7 @@ The generator puts all of that into the following folder structure:
 |____LICENSE.md
 |____README.md
 |____setup.py
+```
 
 <a id="generators"></a>
 ## Generators
@@ -135,7 +137,7 @@ The author's email address. Used in the documentation files and setup.py.
 <a id="contributing"></a>
 ## Contributing
 
-See (contributing.md)[contributing.md] to learn how to contribute to this project. Contributions include bug reports, feature requests, code, and documentation.
+See [contributing.md](contributing.md) to learn how to contribute to this project. Contributions include bug reports, feature requests, code, and documentation.
 
 <a id="changelog"></a>
 ## Changelog

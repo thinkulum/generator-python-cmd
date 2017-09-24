@@ -35,15 +35,15 @@ You can suggest changes to the generator's code or documentation by making the c
 
 #### Getting Started
 
-* Set up the [requirements](README.md#getting_started) (Node.js and Yeoman).
-* Fork the generator-python-cmd repository into your own GitHub account. (See the fork [help page](https://help.github.com/articles/fork-a-repo/).)
-* Clone the fork to your local machine (explained in the help link above).
-* To install the project's dependencies, from the project's root directory run `npm install`.
-* Write your code.
-* Include tests for any features or bugfixes you code. See the Testing section below. You may want to use [test-driven development](http://agiledata.org/essays/tdd.html).
-* In your commits, try to follow the conventions and advice in sections (1) and (2) of Git's [Submitting Patches](https://git.kernel.org/pub/scm/git/git.git/tree/Documentation/SubmittingPatches?id=HEAD) document. One exception is that I capitalize the commit summaries and usually don't prefix them with the file or area.
-* While you were making changes to your code, other people may have made changes to the original project repository. To incorporate these changes, from your local project's root directory run `git pull --rebase` ([remarks on this command](https://stackoverflow.com/questions/15602037/git-rebase-upstream-master-vs-git-pull-rebase-upstream-master)).
-* You can [use this link](https://github.com/thinkulum/generator-python-cmd/compare) to submit a pull request.
+1. Set up the [requirements](README.md#getting_started) (Node.js and Yeoman).
+2. Fork the generator-python-cmd repository into your own GitHub account. (See the fork [help page](https://help.github.com/articles/fork-a-repo/).)
+3. Clone the fork to your local machine (explained in the help link above).
+4. To install the project's dependencies, from the project's root directory run `npm install`.
+5. Write your code.
+6. Include tests for any features or bugfixes you code. See the Testing section below. You may want to use [test-driven development](http://agiledata.org/essays/tdd.html).
+7. In your commits, try to follow the conventions and advice in sections (1) and (2) of Git's [Submitting Patches](https://git.kernel.org/pub/scm/git/git.git/tree/Documentation/SubmittingPatches?id=HEAD) document. One exception is that I capitalize the commit summaries and usually don't prefix them with the file or area.
+8. While you were making changes to your code, other people may have made changes to the original project repository. To incorporate these changes, from your local project's root directory run `git pull --rebase` ([remarks on this command](https://stackoverflow.com/questions/15602037/git-rebase-upstream-master-vs-git-pull-rebase-upstream-master)).
+9. You can [use this link](https://github.com/thinkulum/generator-python-cmd/compare) to submit a pull request.
 
 #### Testing
 
