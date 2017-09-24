@@ -1,36 +1,155 @@
-# generator-python-cmd [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> Generator for a Python app with a command-line interface using cmd
+# Python cmd App Generator [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
 
+> Yeoman generator for a Python app with a command-line interface using cmd
+
+* [Installation](#installation)
+* [Usage](#usage)
+* [Features](#features)
+* [Generators](#generators)
+* [Options](#options)
+* [Roadmap](#roadmap)
+* [Contributing](#contributing)
+* [Changelog](#changelog)
+* [Author](#author)
+* [License](#license)
+
+<a id="installation"></a>
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-python-cmd using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+1. Install [Node.js](https://nodejs.org/).
+2. Run `npm install -g yo` to install [Yeoman](http://yeoman.io) using [npm](https://www.npmjs.com/).
+3. Run `npm install -g generator-python-cmd` to install generator-python-cmd.
 
-```bash
-npm install -g yo
-npm install -g generator-python-cmd
-```
+<a id="usage"></a>
+## Usage
 
-Then generate your new project:
+This readme covers the generator. See the README.md in your generated project for information on using the project's code.
+
+### Generating a Project
+
+1. Create a new directory for your project, and enter it.
+2. From the new project directory, run `yo python-cmd` to generate your new project.
+3. Answer the questions at the prompts to customize your project.
+4. Run `pip install -r requirements-dev.txt` to install the project's initial development tools, such as Sphinx (see the next section).
+
+### Setting up Documentation
+
+Your new project will be set up to use the automatic documentation generator [Sphinx](http://www.sphinx-doc.org/). If you stick with this option, you'll do the initial setup with Sphinx's own script.
+
+1. If you haven't already, install Sphinx using the `pip` command from the previous section.
+2. Follow the Sphinx [tutorial](http://www.sphinx-doc.org/en/stable/tutorial.html), except for the installation.
+3. If you run the `sphinx-quickstart` script from your project's root directory, set the "Root path for the documentation" to `docs`.
+4. I recommend saying `y` to at least the following extensions (these and other extensions described [here](http://www.sphinx-doc.org/en/stable/ext/builtins.html)):
+    * autodoc - Lets you avoid maintaining duplicate documentation between your code and the Sphinx documents. Also lets you format your docstrings nicely.
+    * doctest - Tests all the code examples in your documentation, if you put them in doctest blocks.
+    * coverage - Checks whether your documentation covers your project's whole public API.
+    * viewcode - Links the documentation of each object to a highlighted version of the object's source code so users can easily examine its implementation.
+
+<a id="features"></a>
+## Features
+
+The generator creates
+
+* an app.py script for running your application
+* an in-app command-line prompt using the cmd library
+* a setup.py script for optionally installing your application's package as a library
+* a <package> directory (renamed to your package name) to contain your application's package files
+* a config directory to house the app's configuration files
+* a tests directory for unit tests using nose2
+* a docs directory to contain your documentation, ready to be set up by Sphinx
+* a readme file to hold basic information on installing, using, and contributing to the project
+* an MIT license file
+* a Git ignore file
+
+The generator puts all of that into the following folder structure:
+
+.
+|____config
+|____docs
+|____<package>
+| |______init__.py
+| |____cli.py
+| |____config.py
+| |____controller.py
+|____tests
+| |____context.py
+| |____test.py
+|____app.py
+|____.gitignore
+|____LICENSE.md
+|____README.md
+|____setup.py
+
+<a id="generators"></a>
+## Generators
+
+Available generators:
+
+* [python-cmd](#app) (aka [python-cmd:app](#app))
+
+### App
+
+Sets up a new Python cmd app, generating all the boilerplate you need to get started.
 
 ```bash
 yo python-cmd
 ```
 
-## Getting To Know Yeoman
+<a id="options"></a>
+## Options
 
- * Yeoman has a heart of gold.
- * Yeoman is a person with feelings and opinions, but is very easy to work with.
- * Yeoman can be too opinionated at times but is easily convinced not to be.
- * Feel free to [learn more about Yeoman](http://yeoman.io/).
+There are currently no command-line options for the generator.
 
+The prompts ask for the following information:
+
+### projectName
+**Default:** _UNDEFINED_
+
+The project name. Used in the documentation files and setup.py.
+
+### packageName
+**Default:** _UNDEFINED_
+
+The package name. Used in app.py, test files, and setup.py.
+
+### projectDesc
+**Default:** _UNDEFINED_
+
+The project description. Used in the documentation files and setup.py.
+
+### author
+**Default:** _UNDEFINED_
+
+The author's name. Used in the documentation files and setup.py.
+
+### authorEmail
+**Default:** _UNDEFINED_
+
+The author's email address. Used in the documentation files and setup.py.
+
+<a id="roadmap"></a>
+## Roadmap
+
+* Add a roadmap.
+
+<a id="contributing"></a>
+## Contributing
+
+See (contributing.md)[contributing.md] to learn how to contribute to this project. Contributions include bug reports, feature requests, code, and documentation.
+
+<a id="changelog"></a>
+## Changelog
+
+See the [Releases](https://github.com/yeoman/generator-python-cmd/releases) page for this project on GitHub.
+
+<a id="author"></a>
+## Author
+
+* [Andy Culbertson](https://github.com/thinkulum)
+
+<a id="license"></a>
 ## License
 
 MIT © [Andy Culbertson](http://www.thinkulum.net/)
 
-
-[npm-image]: https://badge.fury.io/js/generator-python-cmd.svg
-[npm-url]: https://npmjs.org/package/generator-python-cmd
-[travis-image]: https://travis-ci.org/thinkulum/generator-python-cmd.svg?branch=master
-[travis-url]: https://travis-ci.org/thinkulum/generator-python-cmd
-[daviddm-image]: https://david-dm.org/thinkulum/generator-python-cmd.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/thinkulum/generator-python-cmd
+For details see the [LICENSE](LICENSE) file.

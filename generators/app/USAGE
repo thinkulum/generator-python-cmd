@@ -5,7 +5,7 @@ Example:
     yo python-cmd
 
     This will create:
-        README.md: Basic information for installing, using, and contributing to the project.
+        README.md: Basic information on installing, using, and contributing to the project.
         setup.py: The script for optionally installing your application's package as a library.
         app.py: The script for running your application.
         <package>/: Package files for your application.
