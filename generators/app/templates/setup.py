@@ -14,6 +14,7 @@ config = {
     'version': __version__,
     'packages': ['<%= packageName %>'],
     'install_requires': ['docutils', 'nose2'],
+    'tests_require': ['Sphinx>=1.4.1,<2.0.0'],
 }
 
 setup(**config)

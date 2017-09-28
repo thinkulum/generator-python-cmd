@@ -93,6 +93,8 @@ describe('generator-python-cmd:app', () => {
     'LICENSE.md',
     'README.md',
     'setup.py',
+    'requirements.txt',
+    'requirements-dev.txt',
     'package/cli.py',
     'package/config.py',
     'package/controller.py',

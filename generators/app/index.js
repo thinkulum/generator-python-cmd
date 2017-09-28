@@ -130,7 +130,11 @@ module.exports = class extends Generator {
   }
 
   _writingSetup() {
-    const templatePaths = ['setup.py'];
+    const templatePaths = [
+      'setup.py',
+      'requirements.txt',
+      'requirements-dev.txt',
+    ];
     const options = {packageName: this.props.packageName,
       projectName: this.props.projectName,
       projectDesc: this.props.projectDesc,
