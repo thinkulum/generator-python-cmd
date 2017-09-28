@@ -97,18 +97,13 @@ describe('generator-python-cmd:app', () => {
     'package/config.py',
     'package/controller.py',
     'package/__init__.py',
-    'docs/make.bat',
-    'docs/Makefile',
-    'docs/source/conf.py',
-    'docs/source/index.rst',
     'tests/context.py',
     'tests/test.py',
   ];
 
   const expectedEmptyDirPaths = [
     'config',
-    'docs/source/_static',
-    'docs/source/_templates',
+    'docs',
   ];
 
   it('creates expected files', () => {

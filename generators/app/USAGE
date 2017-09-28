@@ -11,4 +11,4 @@ Example:
         <package>/: Package files for your application.
         config/: Configuration files for your application.
         tests/: Unit tests for your application.
-        docs/source/: Documentation for your application.
+        docs/: Documentation for your application.

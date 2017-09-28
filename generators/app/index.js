@@ -106,18 +106,13 @@ module.exports = class extends Generator {
 
   _writingDocs() {
     const dirPaths = [
-      'docs/source/_static',
-      'docs/source/_templates',
+      'docs',
     ];
     this._makeDirs(dirPaths);
 
     const templatePaths = [
       'LICENSE.md',
       'README.md',
-      'docs/make.bat',
-      'docs/Makefile',
-      'docs/source/conf.py',
-      'docs/source/index.rst'
     ];
     const options = {projectName: this.props.projectName,
       author: this.props.author,
