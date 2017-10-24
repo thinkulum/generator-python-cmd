@@ -20,10 +20,10 @@
   ],
   "devDependencies": {
     "debug": ">= 2.6.9 < 3.0.0 || >= 3.1.0",
-    "eslint": "^3.18.0",
-    "eslint-config-xo-space": "^0.16.0",
-    "jest": "^20.0.4",
-    "jest-cli": "^20.0.4",
+    "eslint": "^4.9.0",
+    "eslint-config-xo-space": "^0.17.0",
+    "jest": "^21.2.1",
+    "jest-cli": "^21.2.1",
     "nsp": "^2.6.3",
     "yeoman-assert": "^3.0.0",
     "yeoman-test": "^1.6.0"
