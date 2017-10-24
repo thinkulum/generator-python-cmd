@@ -1,4 +1,4 @@
-# Python cmd App Generator [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
+# Python cmd App Generator [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 
 > Yeoman generator for a Python app with a command-line interface using cmd
 
