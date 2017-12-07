@@ -132,7 +132,25 @@ The author's email address. Used in the documentation files and setup.py.
 <a id="roadmap"></a>
 ## Roadmap
 
-* Add a roadmap.
+To the generator:
+
+* Add configuration saving.
+* Add command-line options.
+* Add EditorConfig configuration for synchronizing coding style.
+
+To the app templates:
+
+* Enable app commands from the command line.
+* Add user configuration.
+* Add EditorConfig configuration for synchronizing coding style.
+* Add pylama configuration for code linting.
+* Switch to pytest for testing.
+* Add Wheel configuration for packaging.
+* Add conda configuration for package and environment management.
+* Add pyup configuration for dependency management.
+* Add Codecov configuration for code coverage reporting.
+* Add Tox configuration for managing test environments.
+* Add Travis CI configuration for automatic testing and deployment.
 
 <a id="contributing"></a>
 ## Contributing
