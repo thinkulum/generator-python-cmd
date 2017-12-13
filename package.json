@@ -1,6 +1,6 @@
 {
   "name": "generator-python-cmd",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Generator for a Python app with a command-line interface using cmd",
   "homepage": "https://github.com/thinkulum/generator-python-cmd",
   "author": {
