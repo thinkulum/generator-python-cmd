@@ -29,17 +29,20 @@ module.exports = class extends Generator {
       type: 'input',
       name: 'projectName',
       message: 'What is the project name?',
+      // Title case the appname. Based on https://stackoverflow.com/a/196991.
+      default: this.appname.replace(/\b\w/g, function(txt){return txt.toUpperCase();}),
     },
     {
       type: 'input',
       name: 'projectSlug',
       message: 'What is the project slug?',
-      default: this.appname,
+      default: this.appname.replace(/ /g, '-'),
     },
     {
       type: 'input',
       name: 'packageName',
       message: 'What is the package name?',
+      default: this.appname.replace(/ /g, ''),
     },
     {
       type: 'input',
