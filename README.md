@@ -1,4 +1,10 @@
-# Python cmd App Generator [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Test Coverage][codecov-image]][codecov-url]
+# Python cmd App Generator
+
+[![NPM version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+[![Test Coverage][codecov-image]][codecov-url]
+[![Dependency Status][daviddm-image]][daviddm-url]
+[![Dev Dependency Status][daviddm-dev-image]][daviddm-url]
 
 > Yeoman generator for a Python app with a command-line interface using cmd
 
@@ -173,3 +179,16 @@ See the [Releases](https://github.com/yeoman/generator-python-cmd/releases) page
 MIT © [Andy Culbertson](https://www.thinkulum.net/)
 
 For details see the [LICENSE](LICENSE) file.
+
+[travis-image]: https://img.shields.io/travis/thinkulum/generator-python-cmd.svg
+[travis-url]: https://travis-ci.org/thinkulum/generator-python-cmd
+
+[codecov-image]: https://img.shields.io/codecov/c/github/thinkulum/generator-python-cmd.svg
+[codecov-url]: https://codecov.io/github/thinkulum/generator-python-cmd
+
+[npm-image]: http://img.shields.io/npm/v/generator-python-cmd.svg
+[npm-url]: https://npmjs.org/package/generator-python-cmd
+
+[daviddm-image]: https://img.shields.io/david/thinkulum/generator-python-cmd.svg
+[daviddm-dev-image]: https://img.shields.io/david/dev/thinkulum/generator-python-cmd.svg
+[daviddm-url]: https://david-dm.org/thinkulum/generator-python-cmd
