@@ -95,13 +95,13 @@ module.exports = class extends Generator {
 
   _writingLib() {
     const templatePaths = [
-      'package/cli.py',
-      'package/config.py',
-      'package/controller.py',
-      'package/__init__.py',
+      'cli.py',
+      'config.py',
+      'controller.py',
+      '__init__.py',
     ];
     const options = {};
-    this._copyTpls(templatePaths, options);
+    this._copyPackageTpls(templatePaths, options);
   }
 
   _writingDocs() {
@@ -150,6 +150,19 @@ module.exports = class extends Generator {
       this.fs.copyTpl(
         this.templatePath(templatePath),
         this.destinationPath(templatePath),
+        options
+      );
+    }
+  }
+
+  _copyPackageTpls(templatePaths, options) {
+    var i;
+    for (i = 0; i < templatePaths.length; i++) {
+      var templatePath = 'package/' + templatePaths[i];
+      var destinationPath = this.props.packageName + '/' + templatePaths[i];
+      this.fs.copyTpl(
+        this.templatePath(templatePath),
+        this.destinationPath(destinationPath),
         options
       );
     }

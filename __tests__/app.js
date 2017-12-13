@@ -77,11 +77,13 @@ var difference = function (setA, setB) {
   return difference;
 };
 
+const packageName = 'cookiefactory';
+
 describe('generator-python-cmd:app', () => {
   beforeAll(() => {
     return helpers.run(path.join(__dirname, '../generators/app'))
       .withPrompts({projectName: 'Cookie Factory',
-        packageName: 'cookiefactory',
+        packageName: packageName,
         projectDesc: 'A project for managing my coding projects',
         author: 'Andy Culbertson',
         authorEmail: 'thinkulum@gmail.com'});
@@ -95,10 +97,10 @@ describe('generator-python-cmd:app', () => {
     'setup.py',
     'requirements.txt',
     'requirements-dev.txt',
-    'package/cli.py',
-    'package/config.py',
-    'package/controller.py',
-    'package/__init__.py',
+    packageName + '/cli.py',
+    packageName + '/config.py',
+    packageName + '/controller.py',
+    packageName + '/__init__.py',
     'tests/context.py',
     'tests/test.py',
   ];
