@@ -105,12 +105,12 @@ There are currently no command-line options for the generator.
 The prompts ask for the following information:
 
 ### projectName
-**Default:** _UNDEFINED_
+**Default:** _[Name of project folder in title case and with non-word characters replaced by spaces]_
 
 The project name. Used in the documentation files and setup.py.
 
 ### packageName
-**Default:** _UNDEFINED_
+**Default:** _[Name of project folder with non-word characters removed]_
 
 The package name. Used in app.py, test files, and setup.py.
 
@@ -170,6 +170,6 @@ See the [Releases](https://github.com/yeoman/generator-python-cmd/releases) page
 <a id="license"></a>
 ## License
 
-MIT © [Andy Culbertson](http://www.thinkulum.net/)
+MIT © [Andy Culbertson](https://www.thinkulum.net/)
 
 For details see the [LICENSE](LICENSE) file.
