@@ -126,12 +126,12 @@ The package name. Used in app.py, test files, and setup.py.
 The project description. Used in the documentation files and setup.py.
 
 ### author
-**Default:** _UNDEFINED [or automatically saved value]_
+**Default:** _UNDEFINED_
 
 The author's name. Used in the documentation files and setup.py.
 
 ### authorEmail
-**Default:** _UNDEFINED [or automatically saved value]_
+**Default:** _UNDEFINED_
 
 The author's email address. Used in the documentation files and setup.py.
 
