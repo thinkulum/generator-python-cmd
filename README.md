@@ -126,12 +126,12 @@ The package name. Used in app.py, test files, and setup.py.
 The project description. Used in the documentation files and setup.py.
 
 ### author
-**Default:** _UNDEFINED_
+**Default:** _UNDEFINED [or automatically saved value]_
 
 The author's name. Used in the documentation files and setup.py.
 
 ### authorEmail
-**Default:** _UNDEFINED_
+**Default:** _UNDEFINED [or automatically saved value]_
 
 The author's email address. Used in the documentation files and setup.py.
 
@@ -140,7 +140,6 @@ The author's email address. Used in the documentation files and setup.py.
 
 To the generator:
 
-* Add configuration saving.
 * Add command-line options.
 * Add EditorConfig configuration for synchronizing coding style.
 
