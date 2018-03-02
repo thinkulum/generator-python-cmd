@@ -140,7 +140,6 @@ The author's email address. Used in the documentation files and setup.py.
 
 To the generator:
 
-* Add configuration saving.
 * Add command-line options.
 * Add EditorConfig configuration for synchronizing coding style.
 
