@@ -121,12 +121,12 @@ The project name. Used in the documentation files and setup.py.
 The package name. Used in app.py, test files, and setup.py.
 
 ### projectDesc
-**Default:** _UNDEFINED_
+**Default:** _UNDEFINED [or automatically saved value]_
 
 The project description. Used in the documentation files and setup.py.
 
 ### author
-**Default:** _UNDEFINED_
+**Default:** _UNDEFINED [or automatically saved value]_
 
 The author's name. Used in the documentation files and setup.py.
 
