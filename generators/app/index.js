@@ -55,11 +55,13 @@ module.exports = class extends Generator {
       type: 'input',
       name: 'author',
       message: 'What is the author\'s name?',
+      store: true
     },
     {
       type: 'input',
       name: 'authorEmail',
       message: 'What is the author\'s email address?',
+      store: true
     },
     ];
 
