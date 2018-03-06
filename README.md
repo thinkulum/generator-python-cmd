@@ -138,10 +138,6 @@ The author's email address. Used in the documentation files and setup.py.
 <a id="roadmap"></a>
 ## Roadmap
 
-To the generator:
-
-* Add EditorConfig configuration for synchronizing coding style.
-
 To the app templates:
 
 * Enable app commands from the command line.
