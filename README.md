@@ -65,6 +65,7 @@ The generator creates
 * a docs directory to contain your documentation, ready to be set up by Sphinx
 * a readme file to hold basic information on installing, using, and contributing to the project
 * an MIT license file
+* an EditorConfig file for synchronizing coding style
 * a Git ignore file
 
 The generator puts all of that into the following folder structure:
@@ -82,6 +83,7 @@ The generator puts all of that into the following folder structure:
 | |____context.py
 | |____test.py
 |____app.py
+|____.editorconfig
 |____.gitignore
 |____LICENSE.md
 |____README.md
@@ -142,7 +144,6 @@ To the app templates:
 
 * Enable app commands from the command line.
 * Add user configuration.
-* Add EditorConfig configuration for synchronizing coding style.
 * Add pylama configuration for code linting.
 * Switch to pytest for testing.
 * Add Wheel configuration for packaging.

@@ -8,6 +8,7 @@ Example:
         README.md: Basic information on installing, using, and contributing to the project.
         setup.py: The script for optionally installing your application's package as a library.
         app.py: The script for running your application.
+        .editorconfig: Configuration for synchronizing coding style.
         <package>/: Package files for your application.
         config/: Configuration files for your application.
         tests/: Unit tests for your application.

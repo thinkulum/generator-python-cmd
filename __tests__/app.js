@@ -90,6 +90,7 @@ describe('generator-python-cmd:app', () => {
   });
 
   const expectedFilePaths = [
+    '.editorconfig',
     '.gitignore',
     'app.py',
     'LICENSE.md',

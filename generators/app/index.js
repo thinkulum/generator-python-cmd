@@ -75,6 +75,7 @@ module.exports = class extends Generator {
   // https://github.com/yeoman/generator-webapp/blob/master/app/index.js
   writing() {
     this._writingGit();
+    this._writingEditorConfig();
     this._writingScript();
     this._writingConfig();
     this._writingLib();
@@ -87,6 +88,12 @@ module.exports = class extends Generator {
     this.fs.copy(
       this.templatePath('gitignore'),
       this.destinationPath('.gitignore'));
+  }
+
+  _writingEditorConfig() {
+    this.fs.copy(
+      this.templatePath('editorconfig'),
+      this.destinationPath('.editorconfig'));
   }
 
   _writingScript() {
