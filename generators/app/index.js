@@ -62,8 +62,7 @@ module.exports = class extends Generator {
       name: 'authorEmail',
       message: 'What is the author\'s email address?',
       store: true
-    },
-    ];
+    }];
 
     return this.prompt(prompts).then(props => {
       // To access props later use this.props.someAnswer;
