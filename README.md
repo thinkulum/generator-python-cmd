@@ -51,6 +51,8 @@ Your new project will be set up to use the automatic documentation generator [Sp
     * coverage - Checks whether your documentation covers your project's whole public API.
     * viewcode - Links the documentation of each object to a highlighted version of the object's source code so users can easily examine its implementation.
 
+If you'd like your documentation nicely formatted and available online, you can register your repository with [Read the Docs](https://readthedocs.org/), and they will host the project's documentation. Follow their [Getting Started Guide](https://docs.readthedocs.io/en/latest/getting_started.html).
+
 <a id="features"></a>
 ## Features
 
