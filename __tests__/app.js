@@ -34,11 +34,13 @@ var walkSync = function (dir, itemList, itemType) {
   if (theseItems.length === 0 && itemType === 'emptyDir') {
     itemList.push(dir);
   }
+
   theseItems.forEach(function (item) {
     if (fs.statSync(path.join(dir, item)).isDirectory()) {
       if (itemType === 'all' || itemType === 'dir') {
         itemList.push(path.join(dir, item));
       }
+
       itemList = walkSync(path.join(dir, item), itemList, itemType);
     } else if (itemType === 'all' || itemType === 'file') {
       itemList.push(path.join(dir, item));
@@ -74,6 +76,7 @@ var difference = function (setA, setB) {
   for (const elem of setB) {
     difference.delete(elem);
   }
+
   return difference;
 };
 
@@ -154,6 +157,7 @@ describe('generator-python-cmd:app', () => {
           if (err) {
             throw err;
           }
+
           return data;
         });
 
