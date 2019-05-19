@@ -43,7 +43,7 @@ This readme covers the generator. See the README.md in your generated project fo
 Your new project will be set up to use the automatic documentation generator [Sphinx](http://www.sphinx-doc.org/). If you stick with this option, you'll do the initial setup with Sphinx's own script.
 
 1. If you haven't already, install Sphinx using the `pip` command from the previous section.
-2. Follow the Sphinx [tutorial](http://www.sphinx-doc.org/en/stable/tutorial.html), except for the installation.
+2. Follow the Sphinx [tutorial](http://www.sphinx-doc.org/en/master/usage/quickstart.html), except for the installation.
 3. If you run the `sphinx-quickstart` script from your project's root directory, set the "Root path for the documentation" to `docs`.
 4. I recommend saying `y` to at least the following extensions (these and other extensions described [here](http://www.sphinx-doc.org/en/stable/ext/builtins.html)):
     * autodoc - Lets you avoid maintaining duplicate documentation between your code and the Sphinx documents. Also lets you format your docstrings nicely.
@@ -163,7 +163,7 @@ See [contributing.md](contributing.md) to learn how to contribute to this projec
 <a id="changelog"></a>
 ## Changelog
 
-See the [Releases](https://github.com/yeoman/generator-python-cmd/releases) page for this project on GitHub.
+See the [Releases](https://github.com/thinkulum/generator-python-cmd/releases) page for this project on GitHub.
 
 <a id="author"></a>
 ## Author
