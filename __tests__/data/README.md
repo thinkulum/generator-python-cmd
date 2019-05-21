@@ -76,7 +76,7 @@ To quit the app, use the command `q`.
 <a id="testing"></a>
 ## Testing
 
-From a command prompt in the project directory, run the command `nose2` to automatically run all the tests.
+From a command prompt in the project directory, run the command `pytest` to automatically run all the tests.
 
 <a id="changelog"></a>
 ## Changelog

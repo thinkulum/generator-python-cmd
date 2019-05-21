@@ -13,7 +13,7 @@ config = {
     'download_url': '',
     'version': __version__,
     'packages': ['<%= packageName %>'],
-    'install_requires': ['docutils', 'nose2'],
+    'install_requires': ['docutils', 'pytest'],
     'tests_require': ['Sphinx>=1.4.1,<2.0.0'],
 }
 
