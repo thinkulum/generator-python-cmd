@@ -136,7 +136,7 @@ module.exports = class extends Generator {
   _writingTests() {
     const templatePaths = [
       'tests/context.py',
-      'tests/test.py',
+      'tests/test_app.py',
     ];
     const options = {packageName: this.props.packageName};
     this._copyTpls(templatePaths, options);

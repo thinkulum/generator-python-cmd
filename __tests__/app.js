@@ -18,6 +18,7 @@ const assert = require('yeoman-assert');
 const helpers = require('yeoman-test');
 const fs = require('fs');
 const process = require('process');
+const childProcess = require('child_process');
 
 /**
  * Return an absolute path converted from the given relative path.
@@ -134,7 +135,7 @@ describe('generator-python-cmd:app', () => {
     packageName + '/controller.py',
     packageName + '/__init__.py',
     'tests/context.py',
-    'tests/test.py',
+    'tests/test_app.py',
   ];
 
   const expectedEmptyDirPaths = [
