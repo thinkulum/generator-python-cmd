@@ -196,4 +196,10 @@ describe('generator-python-cmd:app', () => {
 
     assert.fileContent(fileContentItems);
   });
+
+  it('passes the app tests', () => {
+    const result = childProcess.execSync('pytest');
+    const failure = new RegExp('= \\d+ failed');
+    assert.ok(failure.test(result) === false);
+  });
 });
