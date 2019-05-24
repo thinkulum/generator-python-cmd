@@ -1,10 +1,7 @@
-matrix:
-  include:
-    - language: python
-      python:
-        - "2.7"
-    - language: node_js
-      node_js:
-        - 10
-      after_success:
-        - bash <(curl -s https://codecov.io/bash)
+language: generic
+python:
+  - "2.7"
+node_js:
+  - 10
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
