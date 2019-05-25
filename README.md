@@ -83,7 +83,7 @@ The generator puts all of that into the following folder structure:
 | |____controller.py
 |____tests
 | |____context.py
-| |____test.py
+| |____test_app.py
 |____app.py
 |____.editorconfig
 |____.gitignore
