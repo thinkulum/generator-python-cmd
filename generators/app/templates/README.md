@@ -70,6 +70,12 @@ To see the details of a command, type `help <command>`. For example, for more in
 
 To quit the app, use the command `q`.
 
+To run only a single command and exit the app, you can type the command and any arguments it needs at the end of the app invocation. For example, running this line at the system's command prompt will display information on the `help` command and then return you to the system command prompt:
+
+```
+python app.py help help
+```
+
 <a id="contributing"></a>
 ## Contributing
 
