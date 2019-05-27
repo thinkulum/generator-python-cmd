@@ -63,7 +63,6 @@ class TestCLI(object):
         assert cli.onecmd('q') == 1
 
 
-
 class TestMetadata(object):
     """
     Class for testing the app's metadata.
@@ -73,7 +72,5 @@ class TestMetadata(object):
         assert <%= packageName %>.__version__ == '0.0.1'
 
 
-
 if __name__ == '__main__':
     pytest.main([__file__])
-

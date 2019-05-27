@@ -1,5 +1,6 @@
 import cmd
 
+
 class CLI(cmd.Cmd):
     """
     Class for defining the command interface.
@@ -9,4 +10,3 @@ class CLI(cmd.Cmd):
         """Quit the application."""
         print('Bye!')
         return True
-

@@ -1,5 +1,6 @@
 import cmd
 
+
 class Command(object):
     """
     Superclass for commands.
