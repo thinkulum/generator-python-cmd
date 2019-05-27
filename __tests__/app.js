@@ -1,5 +1,4 @@
-/* eslint capitalized-comments: ["off"],
-          comma-dangle: ["off"] */
+/* eslint capitalized-comments: ["off"] */
 
 /**
  * @fileOverview Behavior-driven tests of the generator.
@@ -135,12 +134,12 @@ describe('generator-python-cmd:app', () => {
     packageName + '/controller.py',
     packageName + '/__init__.py',
     'tests/context.py',
-    'tests/test_app.py',
+    'tests/test_app.py'
   ];
 
   const expectedEmptyDirPaths = [
     'config',
-    'docs',
+    'docs'
   ];
 
   it('creates expected files', () => {

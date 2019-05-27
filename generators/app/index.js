@@ -1,5 +1,4 @@
-/* eslint capitalized-comments: ["off"],
-          comma-dangle: ["off"] */
+/* eslint capitalized-comments: ["off"] */
 
 /**
  * @fileOverview The main code for this generator.
@@ -32,7 +31,7 @@ module.exports = class extends Generator {
       // Title case the appname. Based on https://stackoverflow.com/a/196991.
       default: this.appname.replace(/\b\w/g, function (txt) {
         return txt.toUpperCase();
-      }),
+      })
     },
     // {
     //   type: 'input',
@@ -44,12 +43,12 @@ module.exports = class extends Generator {
       type: 'input',
       name: 'packageName',
       message: 'What is the package name?',
-      default: this.appname.replace(/ /g, ''),
+      default: this.appname.replace(/ /g, '')
     },
     {
       type: 'input',
       name: 'projectDesc',
-      message: 'What is the project description?',
+      message: 'What is the project description?'
     },
     {
       type: 'input',
@@ -111,7 +110,7 @@ module.exports = class extends Generator {
       'cli.py',
       'config.py',
       'controller.py',
-      '__init__.py',
+      '__init__.py'
     ];
     const options = {};
     this._copyPackageTpls(templatePaths, options);
@@ -119,13 +118,13 @@ module.exports = class extends Generator {
 
   _writingDocs() {
     const dirPaths = [
-      'docs',
+      'docs'
     ];
     this._makeDirs(dirPaths);
 
     const templatePaths = [
       'LICENSE.md',
-      'README.md',
+      'README.md'
     ];
     const options = {projectName: this.props.projectName,
       author: this.props.author,
@@ -136,7 +135,7 @@ module.exports = class extends Generator {
   _writingTests() {
     const templatePaths = [
       'tests/context.py',
-      'tests/test_app.py',
+      'tests/test_app.py'
     ];
     const options = {packageName: this.props.packageName};
     this._copyTpls(templatePaths, options);
@@ -146,7 +145,7 @@ module.exports = class extends Generator {
     const templatePaths = [
       'setup.py',
       'requirements.txt',
-      'requirements-dev.txt',
+      'requirements-dev.txt'
     ];
     const options = {packageName: this.props.packageName,
       projectName: this.props.projectName,
