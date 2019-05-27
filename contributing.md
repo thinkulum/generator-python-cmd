@@ -57,9 +57,7 @@ In your code, try to match the style I'm using in this project.
 
 ##### JavaScript
 
-* For the JavaScript of the generator, I'm following [ESLint rules](https://eslint.org/docs/rules/). I have two exceptions:
-    * I allow comments to begin with a lowercase letter in case I'm commenting out lines for testing.
-    * I allow a comma after the last element of an array. It makes it easier to add or rearrange elements.
+* For the JavaScript of the generator, I'm following [ESLint rules](https://eslint.org/docs/rules/). I have one exception: I allow comments to begin with a lowercase letter in case I'm commenting out lines for testing.
 * In the file and function documentation, I follow [JSDoc](https://jsdoc.app/) formatting.
 
 ##### Python
