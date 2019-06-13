@@ -5,6 +5,7 @@ import codecs
 import configparser
 import collections
 
+
 class Config(collections.UserDict):
     """
     Class for setting settings.
@@ -16,7 +17,7 @@ class Config(collections.UserDict):
         # Set default values.
         self.data = {
             'general': {
-                'user_data_path': 'default'            
+                'user_data_path': 'default'
             }
         }
 
