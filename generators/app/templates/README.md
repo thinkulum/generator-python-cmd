@@ -13,6 +13,7 @@
 * [Changelog](#changelog)
 * [License](#license)
 * [Authors](#authors)
+* [Credits](#credits)
 
 <a id="synopsis"></a>
 ## Synopsis
@@ -96,3 +97,9 @@ This project uses the MIT license. See the file `LICENSE.md` for details.
 ## Authors
 
 * <%= author %> (<%= authorEmail %>) - original author
+
+<a id="credits"></a>
+## Credits
+
+This package was created with [Yeoman](https://yeoman.io/) and the 
+[python-cmd](https://github.com/thinkulum/generator-python-cmd) generator.
