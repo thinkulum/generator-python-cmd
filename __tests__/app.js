@@ -134,7 +134,8 @@ describe('generator-python-cmd:app', () => {
     packageName + '/controller.py',
     packageName + '/__init__.py',
     'tests/context.py',
-    'tests/test_app.py'
+    'tests/test_app.py',
+    'tests/test_controller.py'
   ];
 
   const expectedEmptyDirPaths = [
