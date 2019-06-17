@@ -47,9 +47,9 @@ You can suggest changes to the generator's code or documentation by making the c
 
 #### Testing
 
-The tests are in [\_\_tests\_\_/app.js](__tests__/app.js). Run `npm test` from the generator's root directory to run them. For details on writing them, see Yeoman's [unit testing](http://yeoman.io/authoring/testing.html) tutorial. Note that that document assumes you're using the Mocha testing framework, but the generator's tests actually use [Jest](https://facebook.github.io/jest/), which has a very similar API.
+The tests are in [\_\_tests\_\_/app.js](__tests__/app.js). Run `npm test` from the generator's root directory to run them. For details on writing them, see Yeoman's [unit testing](http://yeoman.io/authoring/testing.html) tutorial. Note that that document assumes you're using the Mocha testing framework, but the generator's tests actually use [Jest](https://facebook.github.io/jest/), which has a very similar API. The repository includes a launch.json file for debugging Jest tests in Visual Studio Code as described in (this recipe)[https://github.com/Microsoft/vscode-recipes/blob/master/debugging-jest-tests/README.md].
 
-This project uses [Travis CI](http://travis-ci.org/) to run its tests automatically whenever its commits are pushed to GitHub. Travis tests the code against Node.js versions 10, 11, and 12. When running your own tests, you may want to switch between these versions using [nvm](https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/).
+This project uses [Travis CI](http://travis-ci.org/) to run its tests automatically whenever its commits are pushed to GitHub. Travis tests the code against Node.js versions 10.3.0, 11, and 12. When running your own tests, you may want to switch between these versions using [nvm](https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/).
 
 #### Style Guide
 
