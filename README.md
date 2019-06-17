@@ -18,6 +18,7 @@
 * [Changelog](#changelog)
 * [Author](#author)
 * [License](#license)
+* [Acknowledgements](#acknowledgements)
 
 <a id="installation"></a>
 ## Installation
@@ -177,6 +178,16 @@ See the [Releases](https://github.com/thinkulum/generator-python-cmd/releases) p
 MIT © [Andy Culbertson](https://www.thinkulum.net/)
 
 For details see the [LICENSE](LICENSE) file.
+
+<a id="acknowledgements"></a>
+## Acknowledgements
+
+These sources have helped shape this project's features and documentation:
+
+* [Yeoman](https://github.com/yeoman)'s various repositories
+* [generator-python-library](https://gitlab.com/hyper-expanse/open-source/generator-python-library)
+* [generator-python-bones](https://github.com/dirmeier/python-bones)
+* The in-house ebook production tools at [Tyndale House Publishers](https://www.tyndale.com/)
 
 [travis-image]: https://img.shields.io/travis/thinkulum/generator-python-cmd.svg
 [travis-url]: https://travis-ci.org/thinkulum/generator-python-cmd
