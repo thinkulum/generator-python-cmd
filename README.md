@@ -18,7 +18,7 @@
 * [Changelog](#changelog)
 * [Author](#author)
 * [License](#license)
-* [Acknowledgements](#acknowledgements)
+* [Acknowledgments](#acknowledgments)
 
 <a id="installation"></a>
 ## Installation
@@ -179,8 +179,8 @@ MIT © [Andy Culbertson](https://www.thinkulum.net/)
 
 For details see the [LICENSE](LICENSE) file.
 
-<a id="acknowledgements"></a>
-## Acknowledgements
+<a id="acknowledgments"></a>
+## Acknowledgments
 
 These sources have helped shape this project's features and documentation:
 
