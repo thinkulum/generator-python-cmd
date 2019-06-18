@@ -64,7 +64,7 @@ The generator creates
 * a setup.py script for optionally installing your application's package as a library
 * a <package> directory (renamed to your package name) to contain your application's package files
 * a config directory to house the app's configuration files
-* a tests directory for unit tests using nose2
+* a tests directory for unit tests using pytest
 * a docs directory to contain your documentation, ready to be set up by Sphinx
 * a readme file to hold basic information on installing, using, and contributing to the project
 * an MIT license file
@@ -146,10 +146,8 @@ The author's email address. Used in the documentation files and setup.py.
 
 To the app templates:
 
-* Enable app commands from the command line.
 * Add user configuration.
 * Add pylama configuration for code linting.
-* Switch to pytest for testing.
 * Add Wheel configuration for packaging.
 * Add conda configuration for package and environment management.
 * Add pyup configuration for dependency management.
