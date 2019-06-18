@@ -91,6 +91,8 @@ The generator puts all of that into the following folder structure:
 |____.gitignore
 |____LICENSE.md
 |____README.md
+|____requirements-dev.txt
+|____requirements.txt
 |____setup.py
 ```
 
